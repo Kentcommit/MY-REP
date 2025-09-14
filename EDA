@@ -1,16 +1,1 @@
-import numpy as np
-import matplotlib.pyplot as plt 
-import pandas as pd
-import seaborn as sns  
-import os
 
-# Load the Excel file as df
-file_path = r"C:\Users\mohan\Desktop\code\Initial Public Offering.xlsx"
-if not os.path.exists(file_path):
-	raise FileNotFoundError(f"File not found: {file_path}")
-
-df = pd.read_excel(file_path)
-
-# Quick sanity check
-print("Loaded:", file_path, "| Shape:", df.shape)
-print(df.head())
